@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Gerar estrelas
+            for (var i = 0; i < 100; i++) {
+                var star = document.createElement("div");
+                star.className = "star";
+                star.style.top = Math.random() * 100 + "%";
+                star.style.left = Math.random() * 100 + "%";
+                document.getElementById("space").appendChild(star);
+            }
+
+            // Gerar estrelas cadentes
+            for (var i = 0; i < 10; i++) {
+                var starC = document.createElement("div");
+                starC.className = "star-cadente";
+                starC.style.top = Math.random() * 100 + "%";
+                starC.style.left = Math.random() * 100 + "%";
+                starC.style.animationDelay = Math.random() * 10 + "s";
+                document.getElementById("space").appendChild(starC);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="space"></div>
+    <div id="header">
+        <h1 style="color: white;">Guilherme Capetto Fernandez</h1>
+        <ul id="navbar">
+            <li id="dropdown">
+                <a href="#">Aprofundar</a>
+                <div id="dropdown-content">
+                    <a href="Home.html">Home</a>
+                    <a href="Projetos.html">Projetos</a>
+                    <a href="contao.html">Contato</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="about-cert">
+        <h2>Certificados</h2>
+        <p>Universidade Nove de Julho</p>
+        <p>Como alguns certificados não poderei deixar o link estarei deixando como imagem aqui.</p>
+        <img src="WhatsApp Image 2023-05-29 at 10.23.59.jpeg" alt="" class="gif">
+        <img src="WhatsApp Image 2023-05-29 at 10.24.17.jpeg" alt="" class="gif">
+        <img src="WhatsApp Image 2023-05-29 at 10.24.26.jpeg" alt="" class="gif">
+        <img src="WhatsApp Image 2023-05-29 at 10.24.45.jpeg" alt="" class="gif">
+        <p>Esses os certificados que consegui fora da grade curricular de meu curso.</p>
+        <p>Os demais certificados terei no termino de meu curso, porem ja tenho conhecimento m SQL, Linux, CMD, Gestao de dados entre outras.</p>
+        <h2>Alura</h2>
+        <p>Na platamorma Alura tenho alguns outros certificados que dixarei via <a href="https://cursos.alura.com.br/user/capettof/fullCertificate/a21250aef5f79b0596b5b001add5d9c7"> Certificados.</a></p>
+
+    </div>
+    <div id="footer">
+        <p>© 2023 Guilherme Capetto Fernandez. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
