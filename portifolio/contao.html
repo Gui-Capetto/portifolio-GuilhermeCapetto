@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="style.css">
+
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Gerar estrelas
+            for (var i = 0; i < 100; i++) {
+                var star = document.createElement("div");
+                star.className = "star";
+                star.style.top = Math.random() * 100 + "%";
+                star.style.left = Math.random() * 100 + "%";
+                document.getElementById("space").appendChild(star);
+            }
+
+            // Gerar estrelas cadentes
+            for (var i = 0; i < 10; i++) {
+                var starC = document.createElement("div");
+                starC.className = "star-cadente";
+                starC.style.top = Math.random() * 100 + "%";
+                starC.style.left = Math.random() * 100 + "%";
+                starC.style.animationDelay = Math.random() * 10 + "s";
+                document.getElementById("space").appendChild(starC);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="space"></div>
+    <div id="header">
+        <h1 style="color: white;">Guilherme Capetto Fernandez</h1>
+        <ul id="navbar">
+            <li id="dropdown">
+                <a href="#">Aprofundar</a>
+                <div id="dropdown-content">
+                    <a href="Home.html">Home</a>
+                    <a href="Certificados.html">Certificados</a>
+                    <a href="Projetos.html">Projetos</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="about-cont">
+        <h2>Meu contato profissional</h2>
+        <p>Estarei disponibilizando minhas informações nas orientações abaixo.</p>
+        <p>Para me mandar um Email: <a href="mailto:capettof@hotmail.com"><img src="pngwing.com (3).png" alt="" class="imagem"></a></p>
+        <p>Para me mandar uma mensagem via WhatsApp: <a href="https://api.whatsapp.com/send?phone=+11996623849&text=Bem Vindo"><img src="pngwing.com (1).png" alt="" class="imagem"></a></p>
+        <p>Para acessar meu linkedin: <a href="https://www.linkedin.com/in/guilherme-capetto-fernandez-aa4b2817a/"><img src="pngwing.com (2).png" alt="" class="imagem"></a></p>
+        <p>Para acessar meu github: <a href="https://github.com/Gui-Capetto"> <img src="pngwing.com.png" alt="" class="imagem"></a></p>
+        <p>Meu Curriculo <a href="CV_GUILHERME_CAPETTO_FERNANDEZ (1).pdf" download>Download do Currículo</a></p>
+
+    </div>
+    </div>
+    <div id="footer">
+        <p>© 2023 Guilherme Capetto Fernandez. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

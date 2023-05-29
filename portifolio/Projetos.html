@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Gerar estrelas
+            for (var i = 0; i < 100; i++) {
+                var star = document.createElement("div");
+                star.className = "star";
+                star.style.top = Math.random() * 100 + "%";
+                star.style.left = Math.random() * 100 + "%";
+                document.getElementById("space").appendChild(star);
+            }
+
+            // Gerar estrelas cadentes
+            for (var i = 0; i < 10; i++) {
+                var starC = document.createElement("div");
+                starC.className = "star-cadente";
+                starC.style.top = Math.random() * 100 + "%";
+                starC.style.left = Math.random() * 100 + "%";
+                starC.style.animationDelay = Math.random() * 10 + "s";
+                document.getElementById("space").appendChild(starC);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="space"></div>
+    <div id="header">
+        <h1 style="color: white;">Guilherme Capetto Fernandez</h1>
+        <ul id="navbar">
+            <li id="dropdown">
+                <a href="#">Aprofundar</a>
+                <div id="dropdown-content">
+                    <a href="Home.html">Home</a>
+                    <a href="Certificados.html">Certificados</a>
+                    <a href="contao.html">Contato</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="about-proj">
+        <h2>Projetos</h2>
+        <p>Ao decorrer d meu caminho de estudos fiz alguns projetos que podem ser vistos em meu <a href="https://www.linkedin.com/in/guilherme-capetto-fernandez-aa4b2817a/">linkedin</a> <a href="https://github.com/Gui-Capetto">github</a>.</p>
+        <p>Aqui estao alguns exemplos.</p>
+        <img src="automatização-Replit-Opera-2023-05-28-15-14-48.gif" alt="gif" class="gif">
+        <p>Neste exemplo esta um de meus projetos pessoais de automação de casa, começou como uma atividade em sala de aula.</p>
+        <p>Agora estou elaborando melhor para colocar em um ardoino.</p>
+        <p>Podem ver outros de meus projetos de C# em <a href="https://replit.com/@GUILHERMECAPETT">replit</a>.</p>
+
+        <p>Logo em seguida outro projeto.</p>
+        <img src="p5.js-Web-Editor-_-Boundless-mars-Opera-2023-05-29-05-48-21_1.gif" alt="gif" class="gif">
+        <p>Um pequeno jogo em JavaScript para o começo de meu aprendizado, que consiste em atravessa a rua com alguns obstaculos.</p>
+        <p>Com esse jogo aprendi como o JavaScript funciona e comecei a elaborar melhor para a criação de sites.</p>
+        <h2>ALURA</h2>
+        <p>Com o aprendizado dos cursos da Alura consegui ter meus primeiros passos na area de tecnologia, foi la que comecei meu aprendizado.</p>
+        <p>Com o projeto Barbearia Alura pude entender como se faz um site do zero e atravez daquele ensinamento venho montando alguns sites que nao poderei divulgar por não estarem com dominio.</p>
+        
+    </div>
+    <div id="footer">
+        <p>© 2023 Guilherme Capetto Fernandez. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

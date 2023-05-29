@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+<head>
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Gerar estrelas
+            for (var i = 0; i < 100; i++) {
+                var star = document.createElement("div");
+                star.className = "star";
+                star.style.top = Math.random() * 100 + "%";
+                star.style.left = Math.random() * 100 + "%";
+                document.getElementById("space").appendChild(star);
+            }
+
+            // Gerar estrelas cadentes
+            for (var i = 0; i < 10; i++) {
+                var starC = document.createElement("div");
+                starC.className = "star-cadente";
+                starC.style.top = Math.random() * 100 + "%";
+                starC.style.left = Math.random() * 100 + "%";
+                starC.style.animationDelay = Math.random() * 10 + "s";
+                document.getElementById("space").appendChild(starC);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="space"></div>
+
+    <div id="header">
+        <h1 style="color: white;">Guilherme Capetto Fernandez</h1>
+        <ul id="navbar">
+            <li id="dropdown">
+                <a href="#">Aprofundar</a>
+                <div id="dropdown-content">
+                    <a href="Certificados.html">Certificados</a>
+                    <a href="Projetos.html">Projetos</a>
+                    <a href="contao.html">Contato</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="about-me">
+        <img src="Captura de tela 2023-04-26 112322.png" alt="Foto de Guilherme Capetto Fernandez">
+        <h2>Sobre mim</h2>
+        <p>Olá, sou Guilherme Capetto Fernandez. Sou um estudante de Segurança da Informação na Universidade Nove de Julho e tenho me dedicado aos estudos em diversas áreas.</p>
+        <p>Atualmente, estou focado no desenvolvimento de websites, utilizando tecnologias como HTML, CSS e JavaScript para criar interfaces interativas e responsivas.</p>
+        <p>Tenho experiência em desenvolvimento em C# e estou trabalhando em projetos pessoais de automação de casas.</p>
+        <p>Estou focado tambem em Linux e tenho explorado diferentes distribuições e comandos do terminal, utilizando Ubunto para isso.</p>
+        <p>Apesar de ter pouca experiência na areea de trabalho, estou sempre aprendendo e buscando melhorar minhas habilidades com as ferramentas do Microsoft Office, como Word, Excel e PowerPoint.</p>
+        <p>Atualmente, estudo em um ambiente online(ALURA), utilizando plataformas de aprendizado, cursos e documentações para aprimorar meus conhecimentos e habilidades.</p>
+        <p>Minhas experiencias e aprendizado em algumas areas nao me renderam certificado, porém me trouxe muito aprendizado, no caso de C# estudo logica em minha grade de graduação em Segurança da Informação.</p>
+        <p>Se você está procurando um desenvolvedor dedicado e empenhado em aprender, estou aberto a oportunidades de colaboração e aprendizado mútuo.</p>
+    </div>
+
+    <div id="footer">
+        <p>© 2023 Guilherme Capetto Fernandez.</p>
+    </div>
+</body>
+</html>
